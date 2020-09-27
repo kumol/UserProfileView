@@ -12,13 +12,13 @@ const Header= ()=>{
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                   <li class="nav-item active">
-                     <a class="nav-link" href="#">Home </a>
+                     <a class="nav-link" href="/">Home </a>
                   </li>
                   <li class="nav-item"> 
-                     <a class="nav-link" href="#">Contact</a>
+                     <a class="nav-link" href="/contact">Contact</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">About</a>
+                     <a class="nav-link" href="/about" tabindex="-1">About</a>
                   </li>
                </ul>
             </div>

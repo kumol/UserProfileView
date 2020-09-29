@@ -42,7 +42,7 @@ const Home= ()=>{
                             <td>
                                 <Link className="btn btn-primary mr-2" to={`/users/view/${user.id}`}>View</Link>
                                 <Link className="btn btn-outline-primary mr-2" to={`/users/edit/${user.id}`}>Edit</Link>
-                                <Link className="btn btn-danger" onClick={()=>deleteUser(user.id)}>Delete</Link>
+                                <Link className="btn btn-danger" to="/" onClick={()=>deleteUser(user.id)}>Delete</Link>
                             </td>
                         </tr>
                     ))

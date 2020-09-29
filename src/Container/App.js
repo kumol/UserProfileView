@@ -10,6 +10,7 @@ import {BrowserRouter as Router, Route, Switch} from "react-router-dom"
 import NotFound from '../Components/pages/NotFound';
 import AddUsers from '../Components/users/AddUsers';
 import EditUser from '../Components/users/EditUser';
+import ViewUser from '../Components/users/ViewUser';
 
 const App = ()=>{
   return(
@@ -23,6 +24,7 @@ const App = ()=>{
         <Route exact path="/about" component={About}/>
         <Route exact path="/users/add" component={AddUsers}/>
         <Route path="/users/edit/:id" component={EditUser}/>
+        <Route path="/users/view/:id" component={ViewUser}></Route>
         <Route component={NotFound}/>
         
       </Switch>

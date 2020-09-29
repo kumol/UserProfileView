@@ -4,24 +4,17 @@ import {useHistory,useParams} from 'react-router-dom';
 const EditUser=()=>{
     let history = useHistory();
     let {id} = useParams();
-    const [user,setUser] = useState({
-        name:"",
-        username:"",
-        email:"",
-        phone:"",
-        website:"",
-    });
+    const [user,setUser] = useState({});
 
-    const loadUser= async()=>{
-        let result = await axios.get(`http://localhost:3003/users/${id}`);
-        setUser(result.data);
-        console.log(result.data)
-        
-    }
-    
+
     useEffect(()=>{
         loadUser();
     },[])
+
+    const loadUser=async()=>{
+        let res = await axios.get(`http://localhost:3003/users/${id}`);
+        setUser(res.data);
+    }
 
     const onChangeInput = (e)=>{
         console.log(user);

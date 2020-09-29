@@ -9,6 +9,7 @@ import Sidebar from '../Components/layout/Sidebar';
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom"
 import NotFound from '../Components/pages/NotFound';
 import AddUsers from '../Components/users/AddUsers';
+import EditUser from '../Components/users/EditUser';
 
 const App = ()=>{
   return(
@@ -21,6 +22,7 @@ const App = ()=>{
         <Route exact path="/contact" component={Contact}/>
         <Route exact path="/about" component={About}/>
         <Route exact path="/users/add" component={AddUsers}/>
+        <Route path="/users/edit/:id" component={EditUser}/>
         <Route component={NotFound}/>
         
       </Switch>
